@@ -1,10 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "nag-project-001"
-    region         = "us-east-1"
-    key            = "Jenkins-Server-TF/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
-    encrypt        = false
+    bucket = "nag-project-001"
+    region = "us-east-1"
+    key    = "Jenkins-Server-TF/terraform.tfstate"
   }
   required_version = ">=0.13.0"
   required_providers {
