@@ -4,7 +4,7 @@ terraform {
     region         = "us-east-1"
     key            = "Jenkins-Server-TF/terraform.tfstate"
     dynamodb_table = "Lock-Files"
-    encrypt        = true
+    encrypt        = false
   }
   required_version = ">=0.13.0"
   required_providers {
